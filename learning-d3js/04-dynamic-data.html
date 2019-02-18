@@ -1,0 +1,17 @@
+<body>
+    <!-- Call D3.js library -->
+    <script src="https://d3js.org/d3.v5.js"></script>
+        <script>
+          const dataset = [12, 31, 22, 17, 25, 18, 29, 14, 9];
+          
+          d3.select("body").selectAll("h2")
+            .data(dataset)
+            .enter()
+            .append("h2")
+            // Add your code below this line
+            
+            .text((dataset) => dataset + " USD");
+            
+            // Add your code above this line
+        </script>
+      </body>
